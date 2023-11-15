@@ -146,7 +146,7 @@ main {
   visibility: hidden;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   .container {
     background-image: url("./images/bg-pattern-desktop.svg");
     max-width: 1000px;
