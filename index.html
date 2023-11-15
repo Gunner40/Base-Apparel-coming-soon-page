@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="logo-section">
+          <img src="./images/logo.svg" alt="logo" class="logo-section__logo" />
+        </div>
+        <div class="hero-section">
+          <picture
+            ><source
+              media="(min-width: 1200px)"
+              srcset="./images/hero-desktop.jpg" />
+            <img
+              src="./images/hero-mobile.jpg"
+              alt="woman"
+              class="hero-section__image"
+          /></picture>
+        </div>
+        <div class="form-section">
+          <h1 class="form-section__heading"><span>We're</span> coming soon</h1>
+          <p class="form-section__text">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form novalidate>
+            <input
+              type="email"
+              name="email"
+              class="form-section__email-input"
+              placeholder="Email address"
+              required
+            />
+            <button type="submit" class="form-section__submit-button">
+              <img src="./images/icon-arrow.svg" alt="arrow" />
+            </button>
+            <p class="form-section__validation-error v-hidden">
+              Please provide a valid email
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
