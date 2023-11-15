@@ -4,6 +4,8 @@ const errorMessage = document.querySelector(".form-section__validation-error");
 
 submitButton.addEventListener("click", (e) => {
   const email = emailInput.value;
+
+  // validate email
   if (
     email == "null" ||
     email.startsWith("@") ||
@@ -15,9 +17,16 @@ submitButton.addEventListener("click", (e) => {
   ) {
     e.preventDefault();
     errorMessage.classList.remove("v-hidden");
+
+    // add warning svg as bg image of input  and position it as per design
     emailInput.style.backgroundImage = "url('./images/icon-error.svg')";
     emailInput.style.backgroundRepeat = "no-repeat";
     emailInput.style.backgroundPosition = "75% 50%";
+
+    // adjust for really small screens
+    if (window.innerWidth < 330) {
+      emailInput.style.backgroundPosition = "68% 50%";
+    }
   }
 });
 

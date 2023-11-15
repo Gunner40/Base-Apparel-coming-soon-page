@@ -41,7 +41,7 @@ main {
 }
 
 .container {
-  margin-block: 2em;
+  margin-block: 4em;
   min-width: 250px;
   max-width: 450px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
@@ -183,5 +183,19 @@ main {
 
   .logo-section img {
     width: 110px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .logo-section,
+  .form-section {
+    padding: 1em;
+  }
+  .form-section__email-input {
+    padding-left: 1em;
+  }
+  .form-section__validation-error {
+    margin-left: 13px;
+    font-size: 13px;
   }
 }
