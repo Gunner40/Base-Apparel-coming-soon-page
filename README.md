@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Gunner40/Base-Apparel-coming-soon-page
+- Live Site URL: https://gunner40.github.io/Base-Apparel-coming-soon-page/
 
 ### Built with
 
